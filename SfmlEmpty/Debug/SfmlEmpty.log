@@ -1,9 +1,12 @@
-﻿Build started 2016-01-22 15:40:59.
+﻿Build started 2016-01-22 16:39:18.
      1>Project "\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\SfmlEmpty\SfmlEmpty.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"P:\Documents\SfmlEmpty\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Toolbox.cpp
-         Toolbox.cpp
-     1>\\hsnas6\studenthome\2014\a14alehu\documents\github\livia-game\sfmlempty\toolbox.cpp(39): warning C4715: 'Toolbox::getTexture' : not all control paths return a value
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"P:\Documents\SfmlEmpty\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GameLoop.cpp Main.cpp MapGenerator.cpp
+         MapGenerator.cpp
+         GameLoop.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Main.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.exe" /INCREMENTAL /NOLOGO /LIBPATH:"P:\Documents\SfmlEmpty\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.lib" /MACHINE:X86 Debug\Abstractgame.obj
          Debug\Block0.obj
@@ -23,4 +26,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.82
+Time Elapsed 00:00:05.85

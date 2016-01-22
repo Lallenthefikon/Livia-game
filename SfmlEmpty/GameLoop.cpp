@@ -20,15 +20,18 @@ void GameLoop::run(){
 	shape.setPosition((videoMode.width / 2) - shape.getRadius(), (videoMode.height / 2) - shape.getRadius());
 	shape.setFillColor(sf::Color::Red);
 
+	// Initisiera singeltonklasser
 	Terrainhandler& terrainhandler = Terrainhandler::getInstance();
 	Entityhandler& entityhandler = Entityhandler::getInstance();
-	MapGenerator& mapGenerator = MapGenerator::getInstance();
+	MapGenerator& mapGenerator = MapGenerator::getInstance(&terrainhandler, &entityhandler);
+
 
 	Toolbox::loadTextures();
 
-	mapGenerator.createWorm(entityhandler, sf::Vector2f(200, 200));
-	mapGenerator.createPlayer(entityhandler, sf::Vector2f(30, 200));
-	mapGenerator.createBlock0(terrainhandler, sf::Vector2f(400, 200));
+
+	mapGenerator.createWorm(sf::Vector2f(200, 200));
+	mapGenerator.createPlayer(sf::Vector2f(30, 200));
+	mapGenerator.createBlock0(sf::Vector2f(400, 200));
 
 	// Loop
 	while (window.isOpen()){
