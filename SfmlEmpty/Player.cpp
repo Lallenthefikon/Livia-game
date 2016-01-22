@@ -1,8 +1,10 @@
 #include "Player.h"
 
 
-Player::Player(sf::Vector2f pos):
+Player::Player(sf::Vector2f pos) :
 mPosition(pos){
+	mSprite.setTexture(Toolbox::getTexture(Toolbox::PLAYERTEXTURE));
+	mSprite.setPosition(mPosition);
 }
 
 
@@ -14,5 +16,5 @@ Entity* Player::createPlayer(sf::Vector2f pos){
 }
 
 void Player::render(sf::RenderWindow &window){
-	// KOMMENTAR 
+	window.draw(mSprite);
 }

@@ -2,6 +2,7 @@
 
 #include <SFML\System.hpp>
 #include "Entity.h"
+#include "Toolbox.h"
 
 class Player : public Entity
 {
@@ -13,5 +14,6 @@ public:
 private:
 	Player(sf::Vector2f pos);
 	sf::Vector2f mPosition;
+	sf::Sprite mSprite;
 };
 

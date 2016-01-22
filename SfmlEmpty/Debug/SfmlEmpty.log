@@ -1,19 +1,11 @@
-﻿Build started 2016-01-21 18:59:05.
-     1>Project "P:\Documents\SfmlEmpty\SfmlEmpty\SfmlEmpty.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2016-01-22 15:40:59.
+     1>Project "\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\SfmlEmpty\SfmlEmpty.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"P:\Documents\SfmlEmpty\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Factory.cpp GameLoop.cpp Main.cpp Toolbox.cpp Worm.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"P:\Documents\SfmlEmpty\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Toolbox.cpp
          Toolbox.cpp
-         GameLoop.cpp
-         Generating Code...
-     1>p:\documents\sfmlempty\sfmlempty\toolbox.cpp(23): warning C4715: 'Toolbox::getTexture' : not all control paths return a value
-         Compiling...
-         Main.cpp
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         Worm.cpp
-         Factory.cpp
+     1>\\hsnas6\studenthome\2014\a14alehu\documents\github\livia-game\sfmlempty\toolbox.cpp(39): warning C4715: 'Toolbox::getTexture' : not all control paths return a value
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"P:\Documents\SfmlEmpty\Debug\SfmlEmpty.exe" /INCREMENTAL /NOLOGO /LIBPATH:"P:\Documents\SfmlEmpty\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"P:\Documents\SfmlEmpty\Debug\SfmlEmpty.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"P:\Documents\SfmlEmpty\Debug\SfmlEmpty.lib" /MACHINE:X86 Debug\Abstractgame.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.exe" /INCREMENTAL /NOLOGO /LIBPATH:"P:\Documents\SfmlEmpty\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.lib" /MACHINE:X86 Debug\Abstractgame.obj
          Debug\Block0.obj
          Debug\Entity.obj
          Debug\Entityhandler.obj
@@ -26,9 +18,9 @@
          Debug\Terrainhandler.obj
          Debug\Toolbox.obj
          Debug\Worm.obj
-         SfmlEmpty.vcxproj -> P:\Documents\SfmlEmpty\Debug\SfmlEmpty.exe
-     1>Done Building Project "P:\Documents\SfmlEmpty\SfmlEmpty\SfmlEmpty.vcxproj" (Build target(s)).
+         SfmlEmpty.vcxproj -> \\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\Debug\SfmlEmpty.exe
+     1>Done Building Project "\\hsnas6\StudentHome\2014\a14alehu\Documents\GitHub\Livia-game\SfmlEmpty\SfmlEmpty.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.60
+Time Elapsed 00:00:03.82

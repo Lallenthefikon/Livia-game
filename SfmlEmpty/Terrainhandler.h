@@ -8,6 +8,8 @@ class Terrainhandler
 {
 public:
 	static Terrainhandler& getInstance();
+	void addTerrain(Terrain* terrain);
+	void renderTerrains(sf::RenderWindow &window);
 private:
 	Terrainhandler();
 	~Terrainhandler();
