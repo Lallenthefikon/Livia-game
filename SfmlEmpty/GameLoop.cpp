@@ -1,52 +1,51 @@
 #include "GameLoop.h"
 
 
-GameLoop::GameLoop()
-{
+
+GameLoop::GameLoop():
+mCurrentMap("MMap0.txt"),
+mWindow(sf::VideoMode(640, 480), "SFML Application"){
 }
 
 
-GameLoop::~GameLoop()
-{
+GameLoop::~GameLoop(){
 }
 
 void GameLoop::run(){
 
-	sf::VideoMode videoMode(640, 480);
-	sf::RenderWindow window(videoMode, "SFML Application");
-
-	sf::CircleShape shape;
+	mCurrentState = GameRun::getInstance(mCurrentMap);
+	
 	shape.setRadius(80.f);
-	shape.setPosition((videoMode.width / 2) - shape.getRadius(), (videoMode.height / 2) - shape.getRadius());
+	shape.setPosition((mWindow.getSize().x / 2) - shape.getRadius(), (mWindow.getSize().y / 2) - shape.getRadius());
 	shape.setFillColor(sf::Color::Red);
 
-	// Initisiera singeltonklasser
-	Terrainhandler& terrainhandler = Terrainhandler::getInstance();
-	Entityhandler& entityhandler = Entityhandler::getInstance();
-	MapGenerator& mapGenerator = MapGenerator::getInstance(&terrainhandler, &entityhandler);
-
-
-	Toolbox::loadTextures();
-
-
-	mapGenerator.createWorm(sf::Vector2f(200, 200));
-	mapGenerator.createPlayer(sf::Vector2f(30, 200));
-	mapGenerator.createBlock0(sf::Vector2f(400, 200));
 
 	// Loop
-	while (window.isOpen()){
+	while (mWindow.isOpen()){
 
 		sf::Event event;
-		while (window.pollEvent(event)){
+		while (mWindow.pollEvent(event)){
 
 			if (event.type == sf::Event::Closed)
-				window.close();
+				mWindow.close();
 		}
-
-		window.clear();
-		window.draw(shape);
-		entityhandler.renderEntities(window);
-		terrainhandler.renderTerrains(window);
-		window.display();
+		
+		update();
+		render();
+		
 	}
+}
+
+void GameLoop::update(){
+	mCurrentState->update();
+}
+
+void GameLoop::render(){
+	mWindow.clear();
+	
+	mCurrentState->render(mWindow);
+	
+	mWindow.draw(shape);
+	mWindow.display();
+	
 }
