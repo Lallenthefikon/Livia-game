@@ -79,6 +79,7 @@
   <ItemGroup>
     <ClCompile Include="Abstractgame.cpp" />
     <ClCompile Include="Block0.cpp" />
+    <ClCompile Include="Collisionhandler.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Entityhandler.cpp" />
     <ClCompile Include="Factory.cpp" />
@@ -97,6 +98,7 @@
   <ItemGroup>
     <ClInclude Include="Abstractgame.h" />
     <ClInclude Include="Block0.h" />
+    <ClInclude Include="Collisionhandler.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Entityhandler.h" />
     <ClInclude Include="Factory.h" />

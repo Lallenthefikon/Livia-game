@@ -1,7 +1,8 @@
 #pragma once
 
-#include "Abstractgame.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include "Abstractgame.h"
 #include "Entityhandler.h"
 #include "MapGenerator.h"
 #include "Toolbox.h"
@@ -17,9 +18,12 @@ public:
 	void update();
 	void render();
 private:
+	void calcTimeElapsedAndFPS(sf::Clock &clock);
 	GameState* mCurrentState;
 	sf::RenderWindow mWindow;
 	std::string mCurrentMap;
 	sf::CircleShape shape;
+	float mTimeElapsed;
+	int FPS;
 };
 

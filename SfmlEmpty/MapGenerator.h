@@ -15,7 +15,6 @@ public:
 	void readTerrainfile(std::string &filename);
 	void readEntityfile(std::string &filename);
 
-
 	void createWorm(sf::Vector2f pos);
 	void createPlayer(sf::Vector2f pos);
 	void createBlock0( sf::Vector2f pos);

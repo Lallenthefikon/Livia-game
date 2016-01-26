@@ -1,15 +1,40 @@
-﻿Build started 2016-01-21 13:14:30.
-     1>Project "P:\Documents\SfmlEmpty\SfmlEmpty\SfmlEmpty.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2016-01-26 11:51:05.
+     1>Project "\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\SfmlEmpty\SfmlEmpty.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
-         Game.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Collisionhandler.cpp Entityhandler.cpp GameRun.cpp Main.cpp GameLoop.cpp MapGenerator.cpp
+         Collisionhandler.cpp
+         Entityhandler.cpp
+         GameRun.cpp
+         Main.cpp
+         GameLoop.cpp
+     1>GameLoop.cpp(55): warning C4244: '=' : conversion from 'sf::Int32' to 'float', possible loss of data
+     1>GameLoop.cpp(56): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         MapGenerator.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"P:\Documents\SfmlEmpty\Release\SfmlEmpty.exe" /NOLOGO "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"P:\Documents\SfmlEmpty\Release\SfmlEmpty.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"P:\Documents\SfmlEmpty\Release\SfmlEmpty.lib" /MACHINE:X86 /SAFESEH Release\Game.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\Release\SfmlEmpty.exe" /NOLOGO /LIBPATH:"\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\\SFML-2.3.2\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\Release\SfmlEmpty.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\Release\SfmlEmpty.lib" /MACHINE:X86 /SAFESEH Release\Abstractgame.obj
+         Release\Block0.obj
+         Release\Collisionhandler.obj
+         Release\Entity.obj
+         Release\Entityhandler.obj
+         Release\Factory.obj
+         Release\GameRun.obj
+         Release\GameState.obj
+         Release\Main.obj
+         Release\GameLoop.obj
+         Release\MapEditor.obj
+         Release\MapGenerator.obj
+         Release\Player.obj
+         Release\Terrain.obj
+         Release\Terrainhandler.obj
+         Release\Toolbox.obj
+         Release\Worm.obj
          Generating code
+     1>\\hsnas6\studenthome\2015\a15nicel\desktop\github\livia-game\sfmlempty\toolbox.cpp(39): warning C4715: 'Toolbox::getTexture' : not all control paths return a value
+     1>\\hsnas6\studenthome\2015\a15nicel\desktop\github\livia-game\sfmlempty\mapgenerator.cpp(289): warning C4715: 'MapGenerator::readPosition' : not all control paths return a value
          Finished generating code
-         SfmlEmpty.vcxproj -> P:\Documents\SfmlEmpty\Release\SfmlEmpty.exe
-     1>Done Building Project "P:\Documents\SfmlEmpty\SfmlEmpty\SfmlEmpty.vcxproj" (Build target(s)).
+         SfmlEmpty.vcxproj -> \\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\Release\SfmlEmpty.exe
+     1>Done Building Project "\\hsnas6\StudentHome\2015\a15nicel\Desktop\GitHub\Livia-game\SfmlEmpty\SfmlEmpty.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.44
+Time Elapsed 00:00:09.14

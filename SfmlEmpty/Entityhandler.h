@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Entity.h"
+#include "Collisionhandler.h"
 #include <vector>
 
 class Entityhandler

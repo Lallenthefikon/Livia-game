@@ -80,9 +80,11 @@ void Player::move() {
 float Player::lerp(float goal, float current, float delta) {
 	float difference = goal - current;
 
+	// Interpolates the velocity up from stationary
 	if (difference > delta) {
 		return current + delta;
 	}
+	// Interpolates the velocity down to stationary
 	if (difference < -delta) {
 		return current - delta;
 	}

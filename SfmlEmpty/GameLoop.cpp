@@ -20,6 +20,7 @@ void GameLoop::run(){
 	shape.setPosition((mWindow.getSize().x / 2) - shape.getRadius(), (mWindow.getSize().y / 2) - shape.getRadius());
 	shape.setFillColor(sf::Color::Red);
 
+	sf::Clock clock;
 
 	// Loop
 	while (mWindow.isOpen()){
@@ -33,7 +34,7 @@ void GameLoop::run(){
 		
 		update();
 		render();
-		
+		calcTimeElapsedAndFPS(clock);
 	}
 }
 
@@ -47,6 +48,10 @@ void GameLoop::render(){
 	mCurrentState->render(mWindow);
 	
 	mWindow.draw(shape);
-	//mWindow.display();
-	
+	//mWindow.display();	
+}
+
+void GameLoop::calcTimeElapsedAndFPS(sf::Clock &clock){
+	mTimeElapsed = clock.restart().asMilliseconds();
+	FPS = 1000.f / mTimeElapsed;
 }
