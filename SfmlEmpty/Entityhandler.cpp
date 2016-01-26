@@ -27,6 +27,7 @@ void Entityhandler::updateEntities(){
 	for (Entities::size_type i = 0; i < mEntities.size(); i++){
 		mEntities[i]->update();
 	}
+	// Collisionhandler stuff...
 }
 
 void Entityhandler::addEntity(Entity* entity){
