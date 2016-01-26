@@ -10,5 +10,6 @@ public:
 	virtual ~Entity();
 	virtual ENTITYTYPE getType() = 0;
 	virtual void render(sf::RenderWindow &window) = 0;
+	virtual void update() = 0;
 };
 

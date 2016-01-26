@@ -5,6 +5,7 @@
 GameLoop::GameLoop():
 mCurrentMap("MMap0.txt"),
 mWindow(sf::VideoMode(640, 480), "SFML Application"){
+	mWindow.setVerticalSyncEnabled(true);
 }
 
 
@@ -41,11 +42,11 @@ void GameLoop::update(){
 }
 
 void GameLoop::render(){
-	mWindow.clear();
+	//mWindow.clear();
 	
 	mCurrentState->render(mWindow);
 	
 	mWindow.draw(shape);
-	mWindow.display();
+	//mWindow.display();
 	
 }

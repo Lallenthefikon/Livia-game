@@ -19,3 +19,7 @@ Entity* Worm::createWorm(sf::Vector2f pos){
 void Worm::render(sf::RenderWindow &window){
 	window.draw(mSprite);
 }
+
+void Worm::update(){
+
+}

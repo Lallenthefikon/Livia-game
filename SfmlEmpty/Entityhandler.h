@@ -9,7 +9,7 @@ public:
 	static Entityhandler& getInstance();
 	void addEntity(Entity* entity);
 	void renderEntities(sf::RenderWindow &window);
-
+	void updateEntities();
 private:
 	Entityhandler();
 	~Entityhandler();

@@ -23,6 +23,12 @@ void Entityhandler::renderEntities(sf::RenderWindow &window){
 	}
 }
 
+void Entityhandler::updateEntities(){
+	for (Entities::size_type i = 0; i < mEntities.size(); i++){
+		mEntities[i]->update();
+	}
+}
+
 void Entityhandler::addEntity(Entity* entity){
 	mEntities.push_back(entity);
 }

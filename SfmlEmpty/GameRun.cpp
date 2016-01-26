@@ -22,11 +22,12 @@ GameRun* GameRun::getInstance(std::string &mapname){
 }
 
 void GameRun::update(){
+	mEntityHandler.updateEntities();
 }
 
 void GameRun::render(sf::RenderWindow &window){
-	/*window.clear();*/
+	window.clear();
 	mEntityHandler.renderEntities(window);
 	mTerrainHandler.renderTerrains(window);
-	/*window.display();*/
+	window.display();
 }

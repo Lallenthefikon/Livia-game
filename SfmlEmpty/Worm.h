@@ -12,6 +12,7 @@ public:
 	virtual ENTITYTYPE getType(){ return WORM; }
 	static Entity* createWorm(sf::Vector2f pos);
 	virtual void render(sf::RenderWindow &window);
+	virtual void update();
 private:
 	sf::Sprite mSprite;
 	Worm(sf::Vector2f pos);
